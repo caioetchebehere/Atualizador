@@ -1,0 +1,54 @@
+========================================
+ATUALIZADOR SHOP9 - INSTRUÇÕES DE USO
+========================================
+
+COMO GERAR O EXECUTÁVEL:
+------------------------
+1. Abra o PowerShell ou Prompt de Comando como Administrador
+2. Navegue até a pasta do projeto
+3. Execute: build_exe.bat
+4. Aguarde a compilação (pode levar alguns minutos)
+5. O executável estará em: dist\AtualizadorShop9.exe
+
+COMO USAR O EXECUTÁVEL:
+-----------------------
+1. Copie o arquivo AtualizadorShop9.exe para qualquer computador Windows
+2. Execute o arquivo (duplo clique - recomendado: Executar como Administrador)
+3. Uma janela gráfica será aberta (sem console visível)
+4. Clique no botão "Iniciar Atualização"
+5. Acompanhe o progresso na interface:
+   - Barra de progresso mostra o status
+   - Log de operações mostra detalhes
+   - O programa irá:
+     * Encerrar processos Shop9.exe e S9_Otica.exe
+     * Baixar arquivos do Google Drive
+     * Extrair para C:\Shop9
+     * Sobrescrever arquivos existentes
+     * Limpar arquivos temporários
+
+REQUISITOS:
+-----------
+- Windows 10 ou superior
+- Conexão com internet
+- WinRAR ou 7-Zip (o programa detecta automaticamente qual está instalado)
+
+OBSERVAÇÕES:
+-----------
+- O programa precisa de acesso à internet para baixar os arquivos
+- Certifique-se de que a pasta C:\Shop9 existe ou será criada automaticamente
+- Se houver erro na extração, instale WinRAR ou 7-Zip no sistema
+- Execute como Administrador para garantir que todos os processos sejam encerrados
+
+TESTANDO ANTES DE COMPILAR:
+---------------------------
+Para testar o programa antes de compilar:
+1. Instale as dependências: pip install -r requirements.txt
+2. Execute: python atualizador_shop9.py
+
+SUPORTE:
+--------
+Em caso de problemas:
+- Verifique sua conexão com a internet
+- Certifique-se de que tem permissões de escrita em C:\Shop9
+- Verifique se WinRAR ou 7-Zip está instalado
+- Execute como Administrador

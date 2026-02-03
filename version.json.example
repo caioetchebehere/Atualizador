@@ -1,0 +1,20 @@
+{
+  "shop9_download_url": "https://drive.google.com/drive/folders/1aeVHZumfFEb8ac5vQIAP1ePn8OdCO3dI?usp=sharing",
+  "description": "Configuração de link de download do Shop9",
+  "last_updated": "2024-01-15"
+}
+
+/* 
+NOTA: Este arquivo deve ser hospedado no repositório:
+https://github.com/caioetchebehere/AtualizadorAutomatico
+
+CAMPO OBRIGATÓRIO:
+- shop9_download_url (ou shop9_url, url_shop9, shop9_download, url)
+
+CAMPOS OPCIONAIS:
+- description: Descrição das atualizações
+- last_updated: Data da última atualização
+
+O programa busca automaticamente este JSON ao iniciar a atualização
+e usa o link especificado para baixar os arquivos do Shop9.
+*/

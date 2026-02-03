@@ -1,0 +1,60 @@
+========================================
+ALTERAÇÕES PARA REDUZIR FALSOS POSITIVOS
+========================================
+
+Foram implementadas as seguintes melhorias para reduzir a detecção
+falsa de vírus em antivírus:
+
+1. UPX DESABILITADO
+   - O compressor UPX foi desabilitado no arquivo AtualizadorShop9.spec
+   - UPX é frequentemente detectado como malware por antivírus
+   - O executável ficará um pouco maior, mas será menos suspeito
+
+2. METADADOS DE VERSÃO ADICIONADOS
+   - Criado arquivo version_info.rc com informações legítimas:
+     * Nome da empresa: Luxottica Group S.p.A
+     * Descrição: Atualizador Shop9 - Sistema de Atualização Automática
+     * Versão: 1.0.0.0
+     * Copyright: Copyright (C) 2024
+   - Esses metadados ajudam antivírus a identificar o executável como legítimo
+
+3. ARQUIVO .SPEC OTIMIZADO
+   - AtualizadorShop9.spec foi configurado com:
+     * UPX desabilitado
+     * Informações de versão incorporadas
+     * Configurações otimizadas
+
+4. SCRIPT DE COMPILAÇÃO ATUALIZADO
+   - build_exe.bat agora usa o arquivo .spec otimizado
+   - Inclui etapa para compilar informações de versão
+
+========================================
+COMO COMPILAR AGORA
+========================================
+
+1. Execute o script de build normalmente:
+   build_exe.bat
+
+2. O script irá:
+   - Compilar as informações de versão (se possível)
+   - Criar o executável com todas as otimizações
+   - O executável terá metadados legítimos incorporados
+
+3. Verifique os metadados:
+   - Clique com botão direito no executável
+   - Propriedades > Detalhes
+   - Você deve ver as informações de versão
+
+========================================
+RESULTADOS ESPERADOS
+========================================
+
+✓ Menos detecções falsas de vírus
+✓ Executável com metadados legítimos
+✓ Melhor reputação em antivírus
+✓ Usuários podem verificar informações do arquivo
+
+NOTA: Se ainda houver detecção, consulte o arquivo
+REDUZIR_FALSOS_POSITIVOS.md para mais opções.
+
+========================================

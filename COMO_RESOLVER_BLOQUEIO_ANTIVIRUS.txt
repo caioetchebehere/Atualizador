@@ -1,0 +1,89 @@
+========================================
+COMO RESOLVER BLOQUEIO DE ANTIVÍRUS
+========================================
+
+Se o antivírus está bloqueando o AtualizadorShop9.exe,
+siga estas instruções:
+
+========================================
+SOLUÇÃO RÁPIDA (Para Usuários)
+========================================
+
+WINDOWS DEFENDER:
+-----------------
+1. Abra "Configurações" do Windows
+2. Vá em "Privacidade e Segurança" > "Segurança do Windows"
+3. Clique em "Proteção contra vírus e ameaças"
+4. Clique em "Gerenciar configurações"
+5. Role até "Exclusões"
+6. Clique em "Adicionar ou remover exclusões"
+7. Clique em "Adicionar uma exclusão" > "Arquivo"
+8. Selecione: dist\AtualizadorShop9.exe
+   (ou a pasta onde o arquivo está)
+
+OUTROS ANTIVÍRUS:
+------------------
+- Avast/AVG: Configurações > Exceções
+- Kaspersky: Configurações > Exceções e Regras
+- Norton: Configurações > Antivírus > Exceções
+- McAfee: Configurações > Exceções
+
+IMPORTANTE: Adicione apenas o arquivo específico,
+NÃO desabilite o antivírus completamente!
+
+========================================
+VERIFICAR SE É FALSO POSITIVO
+========================================
+
+1. Acesse: https://www.virustotal.com/
+2. Faça upload do arquivo dist\AtualizadorShop9.exe
+3. Veja quantos antivírus detectam
+
+INTERPRETAÇÃO:
+- 0-2 detecções: Normal, falso positivo
+- 3-10 detecções: Alguns falsos positivos
+- 10+ detecções: Investigar (improvável)
+
+========================================
+SOLUÇÕES PARA DESENVOLVEDORES
+========================================
+
+1. SUBMETER PARA ANÁLISE
+   - Windows Defender: 
+     https://www.microsoft.com/en-us/wdsi/filesubmission
+   - Outros: Consulte SOLUCOES_ANTIVIRUS.md
+
+2. ASSINATURA DIGITAL (Recomendado)
+   - Compre certificado Code Signing (~$200-400/ano)
+   - Elimina praticamente todos os falsos positivos
+   - Veja SOLUCOES_ANTIVIRUS.md para detalhes
+
+3. DISTRIBUIR VIA FONTE CONFIÁVEL
+   - GitHub Releases
+   - Sites conhecidos
+   - Antivírus confiam mais em fontes conhecidas
+
+========================================
+OTIMIZAÇÕES JÁ IMPLEMENTADAS
+========================================
+
+✓ UPX desabilitado
+✓ Metadados de versão adicionados
+✓ Módulos desnecessários excluídos
+✓ Configurações otimizadas do PyInstaller
+
+Mesmo com essas otimizações, alguns antivírus
+ainda podem detectar. Isso é normal com executáveis
+Python compilados.
+
+========================================
+SCRIPTS ÚTEIS
+========================================
+
+Verificar informações do executável:
+  python verificar_antivirus.py
+
+Mais informações:
+  SOLUCOES_ANTIVIRUS.md
+
+========================================

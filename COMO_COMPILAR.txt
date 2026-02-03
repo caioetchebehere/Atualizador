@@ -1,0 +1,67 @@
+========================================
+COMO GERAR O EXECUTÁVEL STANDALONE
+========================================
+
+PRÉ-REQUISITOS:
+---------------
+✓ Python 3.7 ou superior instalado
+✓ Acesso à internet (para baixar dependências)
+
+PASSO A PASSO:
+--------------
+1. Abra o PowerShell ou Prompt de Comando
+2. Navegue até a pasta do projeto:
+   cd "caminho\para\a\pasta\do\projeto"
+
+3. Execute o script de build:
+   build_exe.bat
+
+4. Aguarde a compilação (pode levar 2-5 minutos)
+
+5. O executável estará em: dist\AtualizadorShop9.exe
+
+O QUE O SCRIPT FAZ:
+-------------------
+✓ Verifica se Python está instalado
+✓ Instala todas as dependências necessárias
+✓ Instala todas as dependências necessárias
+✓ Cria um executável standalone completo
+✓ O executável NÃO precisa de Python para rodar!
+
+DISTRIBUIÇÃO:
+-------------
+O arquivo dist\AtualizadorShop9.exe pode ser:
+- Copiado para qualquer computador Windows
+- Executado diretamente (duplo clique)
+- Distribuído por email, pendrive, etc.
+- NÃO requer Python instalado no computador de destino
+
+TAMANHO APROXIMADO:
+-------------------
+O executável terá aproximadamente 15-30 MB
+(dependendo das bibliotecas incluídas)
+
+OBSERVAÇÕES:
+-----------
+- O primeiro build pode demorar mais (baixa dependências)
+- Builds subsequentes são mais rápidos
+- Se houver erro, verifique se todas as dependências foram instaladas
+- O executável funciona em Windows 10/11 (64-bit)
+
+PROBLEMAS COMUNS:
+-----------------
+❌ "Python não encontrado"
+   → Instale Python de python.org
+
+❌ "pip não encontrado"
+   → Execute: python -m ensurepip --upgrade
+
+❌ Erro ao instalar dependências
+   → Verifique sua conexão com internet
+   → Tente: pip install --upgrade pip
+
+❌ Executável não funciona em outro PC
+   → Certifique-se de que é Windows 10/11 64-bit
+   → Execute como Administrador
+
+========================================
